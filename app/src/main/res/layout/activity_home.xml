@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.sven.mysmarthome_beta.Home"
+        android:background="@drawable/gradient">
+
+    <Button
+            android:layout_width="250dp"
+            android:layout_height="52dp"
+            android:text="@string/Kitchen"
+            android:textSize="18dp"
+            android:onClick="openLayout"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textColor="#ffffff"
+            android:id="@+id/button_kitchen"
+            android:background="@drawable/gradient_button"
+            android:layout_alignTop="@+id/imageView_kitchen" android:layout_toRightOf="@+id/imageView_kitchen"
+            android:textStyle="bold" android:shadowColor="#000000"/>
+    <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/imageView_kitchen"
+            android:src="@drawable/kitchen"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:contentDescription="Home"/>
+    <ImageView android:layout_width="55dp" android:layout_height="55dp" android:id="@+id/imageView_livingroom"
+               android:src="@drawable/sofa" android:adjustViewBounds="true"
+               android:contentDescription="Home" android:layout_below="@+id/imageView_kitchen"
+               android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+               android:layout_marginTop="30dp"/>
+    <ImageView android:layout_width="55dp" android:layout_height="55dp" android:id="@+id/imageView_bathroom"
+               android:src="@drawable/bathroom" android:adjustViewBounds="true"
+               android:contentDescription="Home" android:layout_below="@+id/imageView_livingroom"
+               android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+               android:layout_marginTop="34dp"/>
+    <ImageView android:layout_width="55dp" android:layout_height="55dp" android:id="@+id/imageView_garage"
+               android:src="@drawable/garage" android:adjustViewBounds="true"
+               android:contentDescription="Home"
+               android:layout_marginTop="33dp" android:layout_below="@+id/imageView_bathroom"
+               android:layout_toLeftOf="@+id/button2" android:layout_toStartOf="@+id/button2"/>
+    <Button android:layout_width="250dp" android:layout_height="52dp" android:text="@string/LivingRoom" android:textSize="18dp" android:textColor="#ffffff"
+            android:id="@+id/button_livingroom" android:background="@drawable/gradient_button"
+            android:onClick="openLayout"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textStyle="bold" android:shadowColor="#000000" android:layout_above="@+id/imageView_bathroom"
+            android:layout_alignLeft="@+id/button_kitchen" android:layout_alignStart="@+id/button_kitchen"/>
+    <Button android:layout_width="250dp" android:layout_height="52dp" android:text="@string/Bathroom" android:textSize="18dp" android:textColor="#ffffff"
+            android:id="@+id/button2" android:background="@drawable/gradient_button"
+            android:onClick="openLayout"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textStyle="bold" android:shadowColor="#010000" android:layout_above="@+id/imageView_garage"
+            android:layout_alignLeft="@+id/button3" android:layout_alignStart="@+id/button3"/>
+    <Button android:layout_width="250dp" android:layout_height="52dp" android:text="@string/Garage" android:textSize="18dp" android:textColor="#ffffff"
+            android:id="@+id/button3" android:background="@drawable/gradient_button"
+            android:onClick="openLayout"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textStyle="bold" android:shadowColor="#060202"
+            android:layout_alignBottom="@+id/imageView_garage" android:layout_toRightOf="@+id/imageView_bathroom"
+            android:layout_toEndOf="@+id/imageView_bathroom"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel"
+            android:id="@+id/imageButton_PowerOff"
+            android:onClick="PowerOff"
+            android:background="#00ffffff"
+            android:layout_alignParentBottom="true" />
+</RelativeLayout>

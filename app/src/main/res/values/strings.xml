@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MySmartHome_beta</string>
+    <string name="Bathroom">Bathroom</string>
+    <string name="Garage">Garage</string>
+    <string name="LivingRoom">Living Room</string>
+    <string name="Kitchen">Kitchen</string>
+</resources>
